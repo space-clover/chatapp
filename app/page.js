@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Userstate from '../components/userstate';
 import { Auth } from '../components/firebase';
 import Singin from '../components/singin';
+import Logout from '../components/logout';
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
         <section className='w-2/3 h-screen ' >
             <Navbar/>
             <Singin/>
+            <Logout/>
         </section>
         
     </main>
