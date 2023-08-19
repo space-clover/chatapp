@@ -1,4 +1,5 @@
 import React from 'react'
+import { Auth } from './firebase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faAmbulance, faBell, faC, faCloud, faEllipsis, faSearch, faUserAstronaut } from '@fortawesome/free-solid-svg-icons';  // <FontAwesomeIcon className='' icon={fa} />
 const Navbar = () => {
