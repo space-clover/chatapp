@@ -1,11 +1,8 @@
 
-import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  } from '@fortawesome/free-solid-svg-icons'; 
+
 import Navbar from '../components/Navbar';
 import Userstate from '../components/userstate';
 import Chat from '../components/chat';
-import { Auth } from '../components/firebase';
 import Sendmessages from '../components/sendmessages';
 
 
