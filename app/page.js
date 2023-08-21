@@ -4,15 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  } from '@fortawesome/free-solid-svg-icons'; 
 import Navbar from '../components/Navbar';
 import Userstate from '../components/userstate';
+import Chat from '../components/chat';
 import { Auth } from '../components/firebase';
-import Singin from '../components/singin';
-import Logout from '../components/logout';
+import Sendmessages from '../components/sendmessages';
 
 
 
 
 export default function Home() {
-
 
   return ( // <FontAwesomeIcon className='' icon={fa} />
     <main className="flex  items-center justify-between   ">
@@ -20,9 +19,9 @@ export default function Home() {
             <Userstate/>
         </section>
         <section className='w-2/3 h-screen ' >
-            <Navbar/>
-            <Singin/>
-            <Logout/>
+            <Navbar/> 
+            <Chat/>
+            <Sendmessages/>
         </section>
         
     </main>
