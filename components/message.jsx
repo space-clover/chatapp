@@ -4,14 +4,18 @@ import { Auth } from './firebase'
 const style = {
   received: "bg-cyan-700  bg-opacity-5 float-left mt-1",
   sent: "float-right bg-white shadow ",
+  nulo: "hidden"
 };
 
 const Message = ({ message }) => {
   const messageClass =
-    message.uid === Auth.currentUser.uid
-      ? `${style.sent}`
-      : `${style.received}`;
-      
+  message.uid === (Auth.currentUser ? Auth.currentUser.uid : null)
+    ? `${style.sent}`
+    : `${style.received}`;
+
+if (!Auth.currentUser && message.uid === null) {
+  ("Para continuar funcionando, debes iniciar sesión con Google :)");
+}
   return (
     <div>
       <div className={`${messageClass} flex items-center w-full max-w-md p-4 space-x-4 text-gray-500 divide-x divide-gray-200 rounded-lg `}>
