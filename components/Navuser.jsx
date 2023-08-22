@@ -16,7 +16,7 @@ const Navuser = () => {
         console.log( "comprobacion de user desde nav:",user)
     });
     return () => {
-        unsubscribe(); // Detener la escucha cuando el componente se desmonta
+        unsubscribe(); 
     };
     }, []);
     console.log(user);
