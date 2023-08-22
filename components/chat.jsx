@@ -27,8 +27,7 @@ const Chat = () => {
         <main className='h-80/100'>
             <div
                 ref={chatRef}
-                className='max-h-full overflow-auto'
-            >
+                className='max-h-full overflow-auto'>
                 {messages.map((message) => (
                     <Message key={message.id} message={message} />
                 ))}
