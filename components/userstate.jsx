@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserDoctor } from '@fortawesome/free-solid-svg-icons';
 import { Auth } from './firebase';
 
-
 const Userstate = () => {
 
 
