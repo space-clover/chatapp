@@ -24,7 +24,7 @@ const Sendmessages = () => {
         
     }
     return (
-    <form onSubmit={sendMessage} className='absolute bottom-1 w-66/100' >
+    <form onSubmit={sendMessage} className='absolute bottom-1 w-full lg:w-66/100' >
         <label htmlFor="chat" className="sr-only">Your message</label>
         <div className="flex items-center px-3 py-2 rounded-lg bg-gray-200">
             <button type="button"

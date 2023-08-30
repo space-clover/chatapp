@@ -24,10 +24,10 @@ const Chat = () => {
     }, []);
 
     return (
-        <main className='h-80/100'>
+        <main className='h-80/100 flex flex-col'>
             <div
                 ref={chatRef}
-                className='max-h-full overflow-auto'>
+                className='max-h-full overflow-auto flex flex-col'>
                 {messages.map((message) => (
                     <Message key={message.id} message={message} />
                 ))}
